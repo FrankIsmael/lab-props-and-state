@@ -2,7 +2,7 @@ import React from 'react'
 
 function Form({ handleChange, inputsValue }) {
     return (
-        <>
+        <div>
             <form onSubmit={handleChange}>
                 <input type="text" name='name' placeholder='Name' onChange={handleChange} />
                 <input type="text" name='surname' placeholder='Surname' onChange={handleChange} />
@@ -15,7 +15,7 @@ function Form({ handleChange, inputsValue }) {
                 <p className='px-md-5'>{inputsValue.age}</p>
             </div>
 
-        </>
+            </div>
     )
 }
 
